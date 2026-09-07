@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { ShoppingBag } from "lucide-react";
+import logo from "@/assets/como-logo.jpg.asset.json";
 import { useToast } from "@/hooks/use-toast";
 
 export default function Login() {
