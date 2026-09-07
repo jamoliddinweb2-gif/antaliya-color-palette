@@ -66,17 +66,21 @@ export default function Login() {
   };
 
   return (
-    <div className="min-h-screen bg-background flex flex-col items-center justify-center p-4">
+    <div className="min-h-screen bg-gradient-to-b from-secondary via-background to-background flex flex-col items-center justify-center p-4">
       <motion.div
         initial={{ opacity: 0, scale: 0.95 }}
         animate={{ opacity: 1, scale: 1 }}
         className="w-full max-w-sm glass-panel p-8 rounded-[2rem] text-center"
       >
-        <div className="mx-auto w-16 h-16 bg-primary/10 text-primary rounded-full flex items-center justify-center mb-6">
-          <ShoppingBag className="w-8 h-8" />
-        </div>
-        <h1 className="text-2xl font-bold mb-2">Xush kelibsiz</h1>
-        <p className="text-muted-foreground mb-8">ShopUz tizimiga kirish</p>
+        <img
+          src={logo.url}
+          alt="Como Pizza logotipi"
+          className="mx-auto w-24 h-24 rounded-full object-cover shadow-lg mb-5 ring-4 ring-primary/15"
+        />
+        <div className="mx-auto mb-5 h-1 w-24 rounded-full flag-stripe" />
+        <h1 className="font-display text-3xl tracking-wide text-primary mb-1">Como Pizza</h1>
+        <p className="text-muted-foreground mb-8 text-sm">The spirit of Italy — buyurtma berish uchun kiring</p>
+
 
         {step === "phone" ? (
           <form onSubmit={handlePhoneSubmit} className="space-y-4 text-left">
