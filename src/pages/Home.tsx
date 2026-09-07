@@ -138,19 +138,25 @@ export default function Home() {
 
       {/* Header */}
       <div className="sticky top-0 z-40 glass-panel border-b border-white/20 dark:border-white/10 px-4 py-3 flex items-center justify-between">
+        <div className="absolute inset-x-0 bottom-0 h-[3px] flag-stripe opacity-90" />
         {logoUrl ? (
-          <img src={logoUrl} alt={siteName} className="h-8 w-auto max-w-[120px] object-contain" />
+          <img src={logoUrl} alt={siteName} className="h-9 w-auto max-w-[130px] object-contain" />
         ) : (
-          <div className="flex items-center gap-1.5">
-            <div className="w-7 h-7 rounded-xl bg-primary flex items-center justify-center">
-              <ShoppingBag className="w-4 h-4 text-white" strokeWidth={2.5} />
+          <div className="flex items-center gap-2.5">
+            <img
+              src={logo.url}
+              alt="Como Pizza logotipi"
+              className="w-10 h-10 rounded-full object-cover ring-2 ring-primary/20"
+            />
+            <div className="leading-tight">
+              <h1 className="font-display text-lg tracking-wide text-primary">{siteName}</h1>
+              <p className="text-[10px] uppercase tracking-[0.18em] text-muted-foreground">
+                The spirit of Italy
+              </p>
             </div>
-            <h1 className="text-xl font-extrabold tracking-tight">
-              <span className="text-primary">{siteName.slice(0, Math.ceil(siteName.length / 2))}</span>
-              <span className="text-foreground">{siteName.slice(Math.ceil(siteName.length / 2))}</span>
-            </h1>
           </div>
         )}
+
         <Link href="/chat">
           <Button variant="ghost" size="icon" className="rounded-full bg-muted/50 w-10 h-10">
             <MessageCircle className="w-5 h-5 text-foreground" />
