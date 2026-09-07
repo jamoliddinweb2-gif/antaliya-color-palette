@@ -114,7 +114,7 @@ export default function Products() {
       images: form.images.split("\n").map(s => s.trim()).filter(Boolean),
       categoryId: form.categoryId ? parseInt(form.categoryId) : undefined,
       inStock: form.inStock,
-      unit: form.unit,
+      unit: form.unit as any,
       isFeatured: form.isFeatured,
     };
 

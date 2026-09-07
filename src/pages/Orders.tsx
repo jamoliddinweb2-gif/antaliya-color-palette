@@ -314,7 +314,7 @@ export default function Orders() {
                 </div>
 
                 {/* Courier tracking card */}
-                {order.courierId && order.status === "delivering" && (
+                {order.courierId && (order.status as string) === "delivering" && (
                   <div className="bg-gradient-to-r from-primary/10 to-primary/5 border border-primary/20 rounded-2xl p-3 mb-3">
                     <div className="flex items-center justify-between">
                       <div className="flex items-center gap-2.5">
