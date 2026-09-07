@@ -1,3 +1,4 @@
+import logo from "@/assets/como-logo.jpg.asset.json";
 import { useState, useEffect } from "react";
 import { Link } from "wouter";
 import { motion, AnimatePresence } from "framer-motion";
