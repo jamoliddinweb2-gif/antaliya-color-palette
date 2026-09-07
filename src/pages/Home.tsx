@@ -31,7 +31,7 @@ export default function Home() {
   const queryClient = useQueryClient();
 
   const { data: siteSettings } = useGetSiteSettings({ query: { queryKey: getGetSiteSettingsQueryKey() } });
-  const siteName = siteSettings?.siteName || "ShopUz";
+  const siteName = siteSettings?.siteName || "Como Pizza";
   const logoUrl = siteSettings?.logoUrl || null;
 
   const { data: banners, isLoading: loadingBanners } = useListBanners({ query: { queryKey: getListBannersQueryKey() } });

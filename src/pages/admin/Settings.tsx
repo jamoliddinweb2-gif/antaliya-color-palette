@@ -182,7 +182,7 @@ export default function Settings() {
           <label className="text-sm font-medium block mb-1">Sayt nomi</label>
           <div className="relative">
             <Globe className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground" />
-            <Input value={siteForm.siteName} onChange={e => setSiteForm(f => ({ ...f, siteName: e.target.value }))} placeholder="ShopUz" className="pl-9 rounded-xl" data-testid="input-site-name" />
+            <Input value={siteForm.siteName} onChange={e => setSiteForm(f => ({ ...f, siteName: e.target.value }))} placeholder="Como Pizza" className="pl-9 rounded-xl" data-testid="input-site-name" />
           </div>
         </div>
         <div>

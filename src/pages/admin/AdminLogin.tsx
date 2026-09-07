@@ -42,7 +42,7 @@ export default function AdminLogin() {
             <Lock className="w-8 h-8 text-white" />
           </div>
           <h1 className="text-2xl font-bold">Admin Panel</h1>
-          <p className="text-muted-foreground text-sm mt-1">ShopUz boshqaruv paneli</p>
+          <p className="text-muted-foreground text-sm mt-1">Como Pizza boshqaruv paneli</p>
         </div>
 
         <div className="bg-card rounded-3xl p-6 shadow-xl border border-border/50 space-y-4">

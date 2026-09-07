@@ -246,7 +246,7 @@ export default function CourierApp() {
                 <Bike className="w-8 h-8 text-primary" />
               </div>
               <h1 className="text-2xl font-bold">Kuryer paneli</h1>
-              <p className="text-muted-foreground text-sm mt-1">ShopUz kuryer tizimi</p>
+              <p className="text-muted-foreground text-sm mt-1">Como Pizza kuryer tizimi</p>
             </div>
             <div className="space-y-3">
               <Input
